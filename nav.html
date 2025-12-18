@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
+    <script src="script/nav.js"></script>
     <header class="header">
       <div class="r-nav">
         <div class="logo">
@@ -88,16 +89,5 @@
       <div class="burger">☰</div>
     </header> 
 
-    <script>
-      const burger = document.querySelector(".burger");
-      
-      if (burger) {
-        burger.addEventListener("click", () => {
-          menu.classList.toggle("active");
-          burger.textContent = menu.classList.contains("active") ? "✖" : "☰";
-        });
-      }
-    </script>
   </body>
 </html>
-
