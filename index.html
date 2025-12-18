@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dove & Smile Studio</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header id="nav-placeholder"></header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1 class="hero-title">YOUR SMILE MATTERS</h1>
+        <p class="hero-description">
+          Welcome to Dove & Smile Studio, where your oral health is our top
+          priority. Our team is dedicated to providing you with personalized,
+          gentle care to ensure your comfort and satisfaction
+        </p>
+        <button class="btn-book"><a href="plans.html">Book Now</a></button>
+
+        <!-- Hero Images -->
+        <div class="hero-images">
+          <div class="image img-left" id="hero-img-1"></div>
+          <div class="image img-center" id="hero-img-2"></div>
+          <div class="image img-right" id="hero-img-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="about" id="about">
+      <div class="about-section">
+        <div class="about-left">
+          <h1>About Us</h1>
+          <p>Our Story</p>
+        </div>
+        <div class="about-right">
+          <p>
+            At Dove & Smile Studio, we offer a wide range of dental services,
+            including general dentistry, orthodontics, and implants. Our focus
+            is on building lasting relationships with our patients by delivering
+            comprehensive care with a gentle touch. Your smile is our passion,
+            and we are committed to ensuring your dental health and
+            satisfaction.
+          </p>
+          <a href="about.html" class="discover-btn">Discover More</a>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Testimonials Section -->
+      <div class="testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "I had an incredible experience at Dove & Smile Studio. The staff
+            was friendly, and the service was exceptional. I highly recommend
+            them!"
+          </p>
+          <p class="testimonial-author">Sarah - Patient</p>
+          <div class="divider"></div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "The orthodontic treatment I received at Dove & Smile Studio was
+            life-changing. I'm so grateful for their expertise and care."
+          </p>
+          <p class="testimonial-author">Mechael - Patient</p>
+        </div>
+        <div class="divider"></div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Dove & Smile Studio provides top-notch dental care. I felt
+            comfortable throughout my visit and left with a brighter smile."
+          </p>
+          <p class="testimonial-author">Elena - Patient</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS SECTION -->
+    <div class="how-it-works section">
+      <div class="container">
+        <div class="section-header">
+          <h1>How It Works</h1>
+          <p>Our Process</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <h2>Consultation</h2>
+            <p>
+              Our team provides personalized care to help you achieve a
+              confident smile. Contact us to book your appointment!
+            </p>
+          </div>
+
+          <div class="process-card">
+            <h2>Treatment</h2>
+            <p>
+              Our treatments are tailored to meet your unique dental needs,
+              ensuring the best care for a healthier, brighter smile.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <h2>Follow-Up</h2>
+            <p>
+              We provide thorough follow-up care to monitor your progress and
+              maintain your oral health.
+            </p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="secondary-grid">
+          <div class="secondary-card">
+            <h2>Aftercare</h2>
+            <p>
+              Proper aftercare is essential for a speedy recovery and long-term
+              dental health.
+            </p>
+          </div>
+
+          <div class="secondary-card">
+            <h2>Emergency Care</h2>
+            <p>
+              Experiencing a dental emergency? Contact us immediately for
+              prompt, compassionate care.
+            </p>
+          </div>
+
+          <div class="secondary-card">
+            <h2>Preventive Care</h2>
+            <p>
+              Prevention is key to good oral health. Our preventive care
+              services aim to keep your smile healthy and bright.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full Width Image Section -->
+    <div class="full-image-section">
+      <div class="studio-image"></div>
+    </div>
+    <!-- Footer Section -->
+    <footer id="footer-placeholder"></footer>
+    <script>
+      const user = localStorage.getItem("userData");
+
+      if (!user) {
+        window.location.href = "register.html";
+      }
+    </script>
+    <script src="script/script.js"></script>
+    <script src="script/include.js"></script>
+  </body>
+</html>

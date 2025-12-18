@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: woff2-variations, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #f4f6ff;
+}
+
+.contact-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #24397c;
+    gap: 40px;
+    max-width: 50%;
+    min-width: 400px;
+    margin: 30px auto;
+}
+.contact-title{
+    font-size: 50px;
+}
+.desc{
+    font-size: 17px;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    input , textarea{
+        font-size: 15px;
+
+        border: none;                    
+        border-bottom: 1px solid #24397c; 
+           
+        outline: none;
+        background-color: transparent;    
+    }
+    labal{
+        font-size: 12px;
+    }
+    
+    button{
+        width: 100%;
+        height: 35px;
+        border: 1px solid #24397c;
+        border-radius: 30px;
+        background-color: #f4f6ff;
+        color: #24397c;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+    }
+    button:hover{
+        background-color: #24397c;
+        color: white;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+  .contact-main{
+    max-width: 80%;
+  }
+}
+@media (max-width: 850px) {
+  .contact-main{
+    max-width: 90%;
+  }
+}

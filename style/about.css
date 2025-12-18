@@ -1,0 +1,133 @@
+/* ========== About Section ========== */
+.about{
+    background: linear-gradient(135deg, #e0e4fb, #ffffff);
+    padding: 8rem 7%;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about .row .image{
+    flex: 1;
+}
+
+.about .row .image img{
+    width: 100%;
+    max-height: 50rem;
+    object-fit: cover;
+    border-radius: 4rem;
+}
+
+.about .row .content{
+    flex: 1;
+    background: var(--white);
+    padding: 4rem;
+    border-radius: 3rem;
+    box-shadow: var(--box-shadow);
+    transform: translateY(80px);
+    opacity: 0;
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp{
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about .row .content h3{
+    font-size: 3.2rem;
+    line-height: 1.4;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    line-height: 2;
+    margin: 1rem 0;
+}
+
+/* ========== Services Section ========== */
+.services{
+    background: linear-gradient(135deg, #ffffff, #e0e4fb);
+    padding: 8rem 7%;
+    border-radius: 5rem;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 3rem;
+}
+
+.services .box{
+    background: var(--white);
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: .3s ease;
+}
+
+.services .box:hover{
+    transform: translateY(-1rem);
+    background: #e6f0ff;
+}
+
+.services .box img{
+    height: 9rem;
+}
+
+.services .box h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.services .box p{
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+/* ================== RESPONSIVE ================== */
+
+/* Tablets */
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+    .about .row{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .row .image img{
+        max-height: 40rem;
+    }
+
+    .about .row .content{
+        padding: 3rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px){
+    html{
+        font-size: 50%;
+    }
+
+    .about{
+        padding: 6rem 5%;
+    }
+
+    .services{
+        padding: 6rem 5%;
+    }
+
+    .about .row .content h3{
+        font-size: 2.6rem;
+    }
+}

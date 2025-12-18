@@ -1,0 +1,199 @@
+.footer{
+    position: relative;
+    min-height: 50vh;
+    background: linear-gradient(135deg, #00b4d8, #90e0ef);
+    padding: 8rem 7% 4rem;
+    color: var(--white);
+}
+
+.footer-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.2);
+    z-index: 0;
+}
+
+.footer .box-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+
+
+.footer .link{
+    display: block;
+    margin: .8rem 0;
+    font-size: 1rem;
+    color: #eaeaea;
+}
+
+.footer .link:hover{
+    color: var(--accent);
+    transform: translateX(5px);
+}
+
+.footer .share{
+    margin-top: 2rem;
+}
+
+.footer .share a{
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    color: #fff;
+    font-size: 1.125rem;
+    margin-right: .5rem;
+}
+
+.footer .share a:hover{
+    background: var(--accent);
+    transform: translateY(-5px);
+}
+
+.newsletter{
+    position: relative;
+    z-index: 1;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.newsletter h3{
+    font-size: 1.625rem;
+    margin-bottom: 2rem;
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.newsletter input{
+    padding: 1.2rem 1.5rem;
+    width: 30rem;
+    border-radius: 5rem;
+    font-size: 0.9375rem;
+}
+
+.newsletter button{
+    padding: 1.2rem 3rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter button:hover{
+    background: #38aee6;
+}
+
+.map{
+    position: relative;
+    z-index: 1;
+    margin: 5rem auto;
+    max-width: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.map iframe{
+    width: 100%;
+    height: 30rem;
+    border: 0;
+}
+
+.footer .credit{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,.3);
+    color: #eaeaea;
+}
+
+@media (max-width: 991px){
+
+    .footer{
+        padding: 6rem 5% 3rem;
+        min-height: auto;
+    }
+
+
+    .newsletter h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    .footer{
+        padding: 5rem 4% 3rem;
+    }
+
+    .footer .box-container{
+        gap: 2.5rem;
+    }
+
+    .footer .link{
+        font-size: 0.875rem;
+    }
+
+    .newsletter{
+        margin-top: 4rem;
+    }
+
+    .newsletter form{
+        flex-direction: column;
+    }
+
+    .newsletter input{
+        width: 100%;
+        max-width: 40rem;
+    }
+
+    .newsletter button{
+        width: 100%;
+        max-width: 40rem;
+    }
+
+    .map iframe{
+        height: 26rem;
+    }
+}
+
+@media (max-width: 576px){
+
+    .footer{
+        padding: 4rem 3% 2.5rem;
+    }
+
+
+    .footer .share a{
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1rem;
+    }
+
+    .newsletter h3{
+        font-size: 1.375rem;
+    }
+
+    .map iframe{
+        height: 22rem;
+    }
+
+    .footer .credit{
+        font-size: 0.875rem;
+        padding-top: 2rem;
+    }
+}

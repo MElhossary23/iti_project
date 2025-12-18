@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team</title>
+
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/team.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="nav-placeholder"></header>
+    <main>
+      <section class="team" id="team">
+        <header>
+          <h1 class="heading">our team</h1>
+        </header>
+
+        <section class="swiper team-slider">
+          <section class="swiper-wrapper">
+            <article class="swiper-slide slide">
+              <figure class="image">
+                <img
+                  src="image/team-1.jpg"
+                  alt="Dr. John Lacy - General Surgeon"
+                />
+
+                <nav class="share">
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </nav>
+              </figure>
+
+              <section class="content">
+                <h3>John Lacy</h3>
+                <span>General Surgeon</span>
+                <p>
+                  Specialized in advanced surgical procedures with over 10 years
+                  of experience in patient care and complex operations.
+                </p>
+              </section>
+            </article>
+
+            <article class="swiper-slide slide">
+              <figure class="image">
+                <img
+                  src="image/team-2.jpg"
+                  alt="Dr. Sarah John - Cardiologist"
+                />
+
+                <nav class="share">
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </nav>
+              </figure>
+
+              <section class="content">
+                <h3>Sarah John</h3>
+                <span>Cardiologist</span>
+                <p>
+                  Expert in heart health, diagnosis, and long-term treatment
+                  plans, focused on preventive cardiology.
+                </p>
+              </section>
+            </article>
+
+            <article class="swiper-slide slide">
+              <figure class="image">
+                <img
+                  src="image/team-4.jpg"
+                  alt="Dr. Emma Watson - Pediatrician"
+                />
+
+                <nav class="share">
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </nav>
+              </figure>
+
+              <section class="content">
+                <h3>Emma Watson</h3>
+                <span>Pediatrician</span>
+                <p>
+                  Dedicated to children’s health, providing compassionate care
+                  and modern medical solutions for all ages.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer id="footer-placeholder"></footer>
+
+    <script src="script/include.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".team-slider", {
+        spaceBetween: 30,
+        loop: true,
+        grabCursor: true,
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          576: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1200: { slidesPerView: 3 },
+        },
+      });
+    </script>
+  </body>
+</html>

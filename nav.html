@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="r-nav">
+        <div class="logo">
+          <a href="#"
+            ><svg
+              preserveAspectRatio="none"
+              data-bbox="20 42 160 116"
+              viewBox="20 42 160 116"
+              xmlns="http://www.w3.org/2000/svg"
+              data-type="color"
+              role="presentation"
+              aria-hidden="true"
+              aria-label=""
+            >
+              <defs>
+                <style>
+                  #comp-m8ix8sjp4 svg [data-color="1"] {
+                    fill: #24397c;
+                  }
+                </style>
+              </defs>
+              <g>
+                <path
+                  d="M38.998 51.482c0-5.237-4.254-9.482-9.499-9.482S20 46.245 20 51.482v97.036c0 5.237 4.254 9.482 9.499 9.482s9.499-4.245 9.499-9.482V51.482z"
+                  fill="#24397c"
+                  opacity=".2"
+                  data-color="1"
+                ></path>
+                <path
+                  d="M38.998 129.798c0-5.237-4.254-9.482-9.499-9.482S20 124.561 20 129.798v18.718c0 5.237 4.254 9.482 9.499 9.482s9.499-4.245 9.499-9.482v-18.718z"
+                  fill="#24397c"
+                  data-color="1"
+                ></path>
+                <path
+                  d="M85.987 51.482c0-5.237-4.251-9.482-9.499-9.482-5.245 0-9.499 4.245-9.499 9.482v97.036c0 5.237 4.254 9.482 9.499 9.482 5.248 0 9.499-4.245 9.499-9.482V51.482z"
+                  fill="#24397c"
+                  opacity=".2"
+                  data-color="1"
+                ></path>
+                <path
+                  d="M85.987 94.026c0-5.237-4.251-9.482-9.499-9.482-5.245 0-9.499 4.245-9.499 9.482v54.49c0 5.237 4.254 9.482 9.499 9.482 5.248 0 9.499-4.245 9.499-9.482v-54.49z"
+                  fill="#24397c"
+                  data-color="1"
+                ></path>
+                <path
+                  d="M132.994 51.482c0-5.237-4.251-9.482-9.499-9.482-5.245 0-9.499 4.245-9.499 9.482v97.036c0 5.237 4.254 9.482 9.499 9.482 5.248 0 9.499-4.245 9.499-9.482V51.482z"
+                  fill="#24397c"
+                  opacity=".2"
+                  data-color="1"
+                ></path>
+                <path
+                  d="M132.994 119.268c0-5.237-4.251-9.482-9.499-9.482-5.245 0-9.499 4.245-9.499 9.482v29.185c0 5.237 4.254 9.482 9.499 9.482 5.248 0 9.499-4.245 9.499-9.482v-29.185z"
+                  fill="#24397c"
+                  data-color="1"
+                ></path>
+                <path
+                  d="M180 51.482c0-5.237-4.251-9.482-9.499-9.482-5.245 0-9.499 4.245-9.499 9.482v97.036c0 5.237 4.254 9.482 9.499 9.482 5.248 0 9.499-4.245 9.499-9.482V51.482z"
+                  fill="#24397c"
+                  opacity=".2"
+                  data-color="1"
+                ></path>
+                <path
+                  d="M180 70.446c0-5.237-4.251-9.482-9.499-9.482-5.245 0-9.499 4.245-9.499 9.482v78.072c0 5.237 4.254 9.482 9.499 9.482 5.248 0 9.499-4.245 9.499-9.482V70.446z"
+                  fill="#24397c"
+                  data-color="1"
+                ></path>
+              </g></svg></a>
+        </div>
+        <div class="title"><a href="#">Dove & Smile Studio</a></div>
+      </div>
+      <nav class="nav">
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="index.html">Home</a></li>
+          <li class="nav-li"><a href="about.html">About</a></li>
+          <li class="nav-li"><a href="plans.html">Plans</a></li>
+          <li class="nav-li"><a href="team.html">Team</a></li>
+          <li class="nav-li"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="burger">☰</div>
+    </header> 
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const menu = document.querySelector(".nav");
+
+      if (burger && menu) {
+        burger.addEventListener("click", () => {
+          menu.classList.toggle("active");
+          burger.textContent = menu.classList.contains("active") ? "✖" : "☰";
+        });
+      }
+    </script>
+  </body>
+</html>
