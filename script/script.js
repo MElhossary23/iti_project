@@ -40,11 +40,6 @@ document.querySelectorAll('.btn-book').forEach(btn => {
     });
 });
 
-// Smooth scroll for Discover More button
-document.querySelector('.discover-btn').addEventListener('click', function(e) {
-    e.preventDefault();
-    console.log('Discover More clicked');
-});
 
 // Subtle animation on scroll
 const observer = new IntersectionObserver((entries) => {
@@ -94,3 +89,4 @@ window.addEventListener('DOMContentLoaded', () => {
         heroDesc.style.transform = 'translateY(0)';
     }, 500);
 });
+
