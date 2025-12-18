@@ -1,5 +1,5 @@
 .pricing{
-    padding: 8rem 7%;
+    padding: 6rem 6%;
     background: linear-gradient(135deg, #e9edff, #ffffff);
 }
 
@@ -7,32 +7,31 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .pricing .box-container .box{
     width: 100%;
-    max-width: 34rem;
-    height: 50rem;
+    max-width: 26rem;
+    height: auto;
 }
 
 .pricing .box-container .box ul{
-    list-style: none; 
-    padding: 0;      
+    list-style: none;
+    padding: 0;
 }
 
 .pricing .box{
-    width: 30rem;
     background: var(--white);
-    border-radius: 2rem;
+    border-radius: 1.8rem;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem;
     box-shadow: var(--box-shadow);
     transition: transform .4s ease;
 }
 
 .pricing .box:hover{
-    transform: translateY(-1rem);
+    transform: translateY(-0.7rem);
 }
 
 .pricing .box.active{
@@ -41,133 +40,113 @@
 }
 
 .pricing .title{
-    font-size: 1.375rem;
-    margin-bottom: 1.25rem;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
     color: var(--black);
 }
 
 .pricing .price{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: var(--primary);
 }
 
 .pricing .price .currency{
-    font-size: 2.1875rem;
+    font-size: 1.2rem;
 }
 
 .pricing .price .amount{
-    font-size: 3.125rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 .pricing ul li{
-    margin: 2.5rem auto;
-    font-size: 0.9375rem;
+    margin: 1.8rem auto;
+    font-size: 0.6rem;
     color: var(--light-color);
     text-align: left;
 }
 
 .pricing ul li i{
     color: var(--secondary);
-    margin-right: .8rem;
+    margin-right: .6rem;
 }
 
+/* ================= BLOG ================= */
+
 .blog{
-    padding: 8rem 7%;
+    padding: 6rem 6%;
     background: linear-gradient(135deg, #ffffff, #f2f4fe);
-    border-radius: 5rem;
+    border-radius: 4rem;
 }
 
 .blog .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 2rem;
 }
 
 .blog .box{
     background: var(--white);
-    border-radius: 2rem;
+    border-radius: 1.8rem;
     overflow: hidden;
     box-shadow: var(--box-shadow);
 }
 
 .blog .box .image img{
     width: 100%;
-    height: 24rem;
+    height: 18rem;
     object-fit: cover;
     transition: .4s ease;
 }
 
 .blog .box:hover .image img{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .blog .content{
-    padding: 2.5rem;
+    padding: 1.8rem;
 }
 
 .blog .link{
     display: inline-block;
-    margin-bottom: 1.5rem;
-    font-size: 0.8125rem;
+    margin-bottom: 1rem;
+    font-size: 0.5rem;
     background: var(--primary);
     color: var(--white);
-    padding: .6rem 1.5rem;
+    padding: .5rem 1.2rem;
     border-radius: 2rem;
 }
 
 .blog .icons{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
-    font-size: 0.8125rem;
+    margin-bottom: 1rem;
+    font-size: 0.5rem;
     color: var(--light-color);
 }
 
 .blog h3{
-    font-size: 1.25rem;
-    margin-bottom: 0.625rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
     color: var(--black);
 }
 
 .blog p{
-    font-size: 0.875rem;
-    line-height: 2;
+    font-size: 0.55rem;
+    line-height: 1.8;
     color: var(--light-color);
 }
 
-/* ================== RESPONSIVE ================== */
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 991px){
-
-    .pricing{
-        padding: 6rem 5%;
-    }
-
-    .pricing .box-container{
-        gap: 2.5rem;
-    }
-
-    .pricing .box-container .box{
-        max-width: 32rem;
-        height: auto;
-    }
-
+    .pricing,
     .blog{
-        padding: 6rem 5%;
-    }
-
-    .blog .box .image img{
-        height: 22rem;
+        padding: 5rem 5%;
     }
 }
 
 @media (max-width: 576px){
-
-    .pricing{
-        padding: 5rem 4%;
-    }
-
     .pricing .box-container{
         flex-direction: column;
         align-items: center;
@@ -175,22 +154,9 @@
 
     .pricing .box-container .box{
         max-width: 100%;
-        height: auto;
-    }
-
-    .pricing ul li{
-        font-size: 0.875rem;
-    }
-
-    .blog{
-        padding: 5rem 4%;
     }
 
     .blog .box .image img{
-        height: 20rem;
-    }
-
-    .blog .content{
-        padding: 2rem;
+        height: 16rem;
     }
 }
