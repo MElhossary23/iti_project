@@ -1,120 +1,71 @@
 .team{
     padding: 8rem 7%;
-    background: linear-gradient(135deg,#e0e4fb, #ffffff);
+    background: linear-gradient(135deg,#e0e4fb,#ffffff);
 }
 
-.team .swiper{
-    padding-bottom: 3rem;
+.team .heading{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
 }
 
-.team .slide{
+.team-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.team-card{
     background: #fff;
     border-radius: 2.5rem;
     overflow: hidden;
     box-shadow: var(--box-shadow);
-    text-align: center;
-    transition: transform .4s ease;
-    height: 100%;
+    transition: transform .3s ease;
 }
 
-.team .slide:hover{
+.team-card:hover{
     transform: translateY(-1rem);
 }
 
-.team .slide .image{
-    position: relative;
-    overflow: hidden;
-}
-
-.team .slide .image img{
+.team-card .image img{
     width: 100%;
     height: 30rem;
     object-fit: cover;
 }
 
-.team .slide .image .share{
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,.85);
-    padding: 2rem 0;
-    transition: .4s ease;
-}
-
-.team .slide:hover .image .share{
-    bottom: 0;
-}
-
-.team .slide .image .share a{
-    margin: 0 1rem;
-    font-size: 1.65rem;
-    color: #fff;
-}
-
-.team .slide .image .share a:hover{
-    color: var(--accent);
-}
-
-.team .slide .content{
+.team-card .content{
     padding: 2.5rem;
+    text-align: center;
 }
 
-.team .slide .content h3{
-    font-size: 1.65rem; 
+.team-card h3{
+    font-size: 1.6rem;
     color: var(--black);
 }
 
-.team .slide .content span{
+.team-card span{
     display: block;
-    font-size: 1.05rem; 
+    font-size: 1.1rem;
     color: var(--secondary);
-    margin-bottom: 1rem;
+    margin: .5rem 0 1rem;
 }
 
-.team .slide .content p{
-    font-size: 1.05rem; 
+.team-card p{
+    font-size: 1rem;
     line-height: 1.8;
     color: var(--light-color);
 }
 
+/* ===== Responsive ===== */
+
 @media (max-width: 991px){
-    .team{
-        padding: 6rem 5%;
-        border-radius: 4rem;
-    }
-
-    .team .slide .image img{
-        height: 26rem;
-    }
-}
-
-@media (max-width: 768px){
-    .team{
-        padding: 5rem 4%;
-        border-radius: 3rem;
-    }
-
-    .team .slide .image img{
-        height: 24rem;
+    .team-grid{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 576px){
-    .team{
-        padding: 4rem 3%;
-        border-radius: 2.5rem;
-    }
-
-    .team .slide .image img{
-        height: 22rem;
-    }
-
-    .team .slide .content h3{
-        font-size: 1.425rem;
-    }
-
-    .team .slide .content p{
-        font-size: 0.975rem; 
+    .team-grid{
+        grid-template-columns: 1fr;
     }
 }
