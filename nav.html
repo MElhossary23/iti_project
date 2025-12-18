@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <script src="script/nav.js"></script>
+    <script>
+      const burger = document.querySelector(".burger");
+      if (burger) {
+        burger.addEventListener("click", () => {
+          menu.classList.toggle("active");
+          burger.textContent = menu.classList.contains("active") ? "✖" : "☰";
+        });
+      }
+    </script>
     <header class="header">
       <div class="r-nav">
         <div class="logo">
@@ -73,7 +81,8 @@
                   fill="#24397c"
                   data-color="1"
                 ></path>
-              </g></svg></a>
+              </g></svg
+          ></a>
         </div>
         <div class="title"><a href="#">Dove & Smile Studio</a></div>
       </div>
@@ -87,7 +96,6 @@
         </ul>
       </nav>
       <div class="burger">☰</div>
-    </header> 
-
+    </header>
   </body>
 </html>
